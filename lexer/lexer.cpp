@@ -1,4 +1,10 @@
+#include <regex>
+
 #include "read-file.h"
+
+regex TK_KEYWORD("(int|return)");
+regex TK_OPEN_PARENTHESES("(\()");
+regex TK_CLOSE_PARENTHESES("(\))");
 
 int main(int argc, char **argv)
 {
